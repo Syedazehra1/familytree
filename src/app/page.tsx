@@ -3111,37 +3111,7 @@ const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      spouseIds:["amira-haider"]
 },
-"ali-mustafa-haider":{
-     id: "ali-mustufa-haider",
-     displayName: "Ali Mustufa Haider",
-     gender: "M",
-     lifeStatus: "alive",
-     parentIds: ["amira-haider","mustafa-haider"],
-     spouseIds:["kulsum-haider"]
-},
-"kulsum-haider":{
-     id: "kulsum-haider",
-     displayName: "Kulsum Haider",
-     gender: "F",
-     lifeStatus: "alive",
-     spouseIds:["ali-mustafa-haider"]
-},
-"abbas-ali-haider":{
-     id: "abbas-ali-haider",
-     displayName: "Abbas Ali Haider",
-     gender: "M",
-     lifeStatus: "alive",
-     parentIds: ["ali-mustafa-haider","kulsum-haider"],
-    
-},
-"hassan-ali-haider":{
-     id: "hassan-ali-haider",
-     displayName: "Hassan Ali Haider",
-     gender: "M",
-     lifeStatus: "alive",
-     parentIds: ["ali-mustafa-haider","kulsum-haider"],
-    
-},
+
 "uzma":{
      id: "uzma",
      displayName: "Uzma",
