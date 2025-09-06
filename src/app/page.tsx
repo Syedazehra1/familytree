@@ -65,7 +65,7 @@ const SAMPLE_FAMILY: FamilyTree =
       gender: "M",
       lifeStatus: "deceased",
       deathDate: "1989-01-01",
-      notes: "Head of the Hussain family tree.",
+      notes: "Head of the Kahdim Hussain family tree.",
       parentIds: ["ghulam-hussain"],
       spouseIds: ["jawadi-baigam"],
     },
@@ -3376,7 +3376,7 @@ export default function FamilyTreePage() {
     <div className="mx-auto max-w-6xl px-4 py-8 bg-white">
       <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900">Hussain Family Tree</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-slate-900">Khadim Hussain Family Tree</h1>
           <p className="mt-1 text-sm text-slate-600">Interactive, click-through explorer. Start from the head and reveal spouse → children → next generation.</p>
         </div>
         <div className="w-full sm:w-80">
