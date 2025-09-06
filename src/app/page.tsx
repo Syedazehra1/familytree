@@ -3124,14 +3124,14 @@ const SAMPLE_FAMILY: FamilyTree =
      displayName: "Kulsum Haider",
      gender: "F",
      lifeStatus: "alive",
-     spouseIds:["ali-haider"]
+     spouseIds:["ali-mustafa-haider"]
 },
 "abbas-ali-haider":{
      id: "abbas-ali-haider",
      displayName: "Abbas Ali Haider",
      gender: "M",
      lifeStatus: "alive",
-     parentIds: ["ali-haider","kulsum-haider"],
+     parentIds: ["ali-mustafa-haider","kulsum-haider"],
     
 },
 "hassan-ali-haider":{
@@ -3139,7 +3139,7 @@ const SAMPLE_FAMILY: FamilyTree =
      displayName: "Hassan Ali Haider",
      gender: "M",
      lifeStatus: "alive",
-     parentIds: ["ali-haider","kulsum-haider"],
+     parentIds: ["ali-mustafa-haider","kulsum-haider"],
     
 },
 "uzma":{
