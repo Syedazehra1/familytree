@@ -3113,7 +3113,7 @@ const SAMPLE_FAMILY: FamilyTree =
 },
 "ali-mustafa-haider":{
      id: "ali-mustufa-haider",
-     displayName: "Ali Haider",
+     displayName: "Ali Mustufa Haider",
      gender: "M",
      lifeStatus: "alive",
      parentIds: ["amira-haider","mustafa-haider"],
