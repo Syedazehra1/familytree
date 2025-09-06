@@ -1,0 +1,62 @@
+{
+  "rootId": "khadim-hussain",
+  "persons": {
+    "khadim-hussain": {
+      "id": "khadim-hussain",
+      "displayName": "Khadim Hussain",
+      "gender": "M",
+      "lifeStatus": "unknown",
+      "spouseIds": ["hajra-khatoon"]
+    },
+    "hajra-khatoon": {
+      "id": "hajra-khatoon",
+      "displayName": "Hajra Khatoon",
+      "gender": "F",
+      "lifeStatus": "unknown",
+      "spouseIds": ["khadim-hussain"]
+    },
+    "fatima": {
+      "id": "fatima",
+      "displayName": "Fatima",
+      "gender": "F",
+      "lifeStatus": "unknown",
+      "parentIds": ["khadim-hussain", "hajra-khatoon"]
+    },
+    "hassan": {
+      "id": "hassan",
+      "displayName": "Hassan",
+      "gender": "M",
+      "lifeStatus": "unknown",
+      "parentIds": ["khadim-hussain", "hajra-khatoon"],
+      "spouseIds": ["ruqaiya"]
+    },
+    "ruqaiya": {
+      "id": "ruqaiya",
+      "displayName": "Ruqaiya",
+      "gender": "F",
+      "lifeStatus": "unknown",
+      "spouseIds": ["hassan"]
+    },
+    "hassan-child-1": {
+      "id": "hassan-child-1",
+      "displayName": "Child 1 of Hassan & Ruqaiya",
+      "gender": "U",
+      "lifeStatus": "unknown",
+      "parentIds": ["hassan", "ruqaiya"]
+    },
+    "hassan-child-2": {
+      "id": "hassan-child-2",
+      "displayName": "Child 2 of Hassan & Ruqaiya",
+      "gender": "U",
+      "lifeStatus": "unknown",
+      "parentIds": ["hassan", "ruqaiya"]
+    },
+    "hassan-child-3": {
+      "id": "hassan-child-3",
+      "displayName": "Child 3 of Hassan & Ruqaiya",
+      "gender": "U",
+      "lifeStatus": "unknown",
+      "parentIds": ["hassan", "ruqaiya"]
+    }
+  }
+}
