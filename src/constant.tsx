@@ -1656,9 +1656,9 @@ export const SAMPLE_FAMILY: FamilyTree =
       id: "ghulam-fatima",
       displayName: "Ghulam Fatima",
       gender: "F",
-      lifeStatus: "alive",
+      lifeStatus: "deceased",
       spouseIds: ["tahir-abbas"],
-       address: "Karachi, Pakistan",
+      grave: { city: "Karachi Pakistan" },
  },
  "madiha":{
       id: "madiha",
@@ -1918,6 +1918,24 @@ export const SAMPLE_FAMILY: FamilyTree =
    spouseIds: ["ammar"],
     address: "Karachi, Pakistan",
  },
+ "mhammad-mohsin":{
+    id: "mhammad-mohsin",
+    displayName: "Mhammad Mohsin",
+    gender: "M",
+    lifeStatus: "alive",
+    parentIds: ["ammar","kisa"],
+    address: "Karachi, Pakistan",
+    orderId: 1
+ },
+ "rahima-fatima":{
+    id: "rahima-fatima",
+    displayName: "Rahima Fatima",
+    gender: "F",
+    lifeStatus: "alive",
+    parentIds: ["ammar","kisa"],
+    address: "Karachi, Pakistan",
+    orderId: 2
+ },
  "kumail-haider":{
    id: "kumail-haider",
    displayName: "Kumail Haider",
@@ -1925,7 +1943,7 @@ export const SAMPLE_FAMILY: FamilyTree =
    lifeStatus: "alive",
     address: "Karachi, Pakistan",
    parentIds: ["allay","sadiq-hussain"],
-   spouseIds: ["sadaf-jr"]
+   spouseIds: ["sadaf-haider"]
  },
  "sadaf-haider":{
    id: "sadaf-haider",
@@ -1935,6 +1953,34 @@ export const SAMPLE_FAMILY: FamilyTree =
    lifeStatus: "alive",
    spouseIds: ["kumail-haider"]
  },
+ "muhammad-arif-hassan":{
+   id: "muhammad-arif-hassan",
+   displayName: "Muhammad Arif",
+   gender: "M",
+   lifeStatus: "alive",
+    address: "Karachi, Pakistan",
+   parentIds: ["kumail-haider","sadaf-haider"],
+    orderId: 1
+ },
+ "muhammadf-taqi-jawad":{
+   id: "muhammadf-taqi-jawad",
+   displayName: "Muhammad Taqi",
+   gender: "M",
+   lifeStatus: "alive",
+    address: "Karachi, Pakistan",
+   parentIds: ["kumail-haider","sadaf-haider"],
+    orderId: 2
+ },
+ "sadiqi-fatima":{
+    id: "sadiqi-fatima",
+    displayName: "Sadiqi Fatima",
+    gender: "F",
+    lifeStatus: "alive",
+    parentIds: ["kumail-haider","sadaf-haider"],
+    address: "Karachi, Pakistan",
+    orderId: 3
+  },
+
  "messam":{
    id: "messam",
    displayName: "Messam",
@@ -1988,8 +2034,8 @@ export const SAMPLE_FAMILY: FamilyTree =
    id: "afroz",
    displayName: "Afroz",
    gender: "M",
-   lifeStatus: "alive",
-    address: "Karachi, Pakistan",
+   lifeStatus: "deceased",
+   grave: { city: "Karachi Pakistan" },
    spouseIds: ["nargis(baby)"]
  },
  "zaigham":{
@@ -1999,7 +2045,8 @@ export const SAMPLE_FAMILY: FamilyTree =
    lifeStatus: "alive",
    parentIds: ["nargis(baby)","afroz"],
     orderId: 1,
-    spouseIds: ["nadia"]
+    spouseIds: ["nadia"],
+    address: "Karachi, Pakistan"
   //  spouseIds: ["Zahra(Munni)"]
  },
   "nadia":{
@@ -2008,6 +2055,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     gender: "F",
     lifeStatus: "alive",
     spouseIds: ["zaigham"]
+      ,address: "Karachi, Pakistan"
   },
   "mohib":{
     id: "mohib",
@@ -2015,6 +2063,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     gender: "M",
     lifeStatus: "alive",
     parentIds: ["zaigham","nadia"],
+      address: "Karachi, Pakistan",
       orderId: 1
   },
   "baqhir":{
@@ -2022,6 +2071,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     displayName: "Baqhir",
     gender: "M",
     lifeStatus: "alive",
+      address: "Karachi, Pakistan",
     parentIds: ["zaigham","nadia"],
       orderId: 2
   },
@@ -2029,17 +2079,19 @@ export const SAMPLE_FAMILY: FamilyTree =
     id: "tatheer",
     displayName: "Tatheer",
     gender: "F",
+      address: "Karachi, Pakistan",
     lifeStatus: "alive",
     parentIds: ["zaigham","nadia"],
       orderId: 3
   },
  "Zahra(Munni)":{
    id: "Zahra(Munni)",
-   displayName: "Zahra",
+   displayName: "Taskeen Zahra",
    gender: "F",
    lifeStatus: "alive",
    parentIds: ["mazahir-hussain","kishwar-sultana"],
    spouseIds: ["qalb-e-abid"],
+    address: "Karachi, Pakistan",
    orderId: 8
  },
  "qalb-e-abid":{
@@ -2047,14 +2099,15 @@ export const SAMPLE_FAMILY: FamilyTree =
    displayName: "Qalb-e-Abid",
    gender: "M",
    lifeStatus: "alive",
-   spouseIds: ["Zahra(Munni)"]
+   spouseIds: ["Zahra(Munni)"],
+   address: "Karachi, Pakistan"
  },
  "raza-abid":{
    id: "raza-abid",
-   displayName: "Raza",
+   displayName: "Raza Abid",
    gender: "M",
    lifeStatus: "alive",
-   parentIds: ["zahra(Munni)", "qalb-e-abid"],
+   parentIds: ["Zahra(Munni)","qalb-e-abid"],
     spouseIds: ["sadaf-raza"]
     ,orderId: 1
  },
@@ -2104,6 +2157,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds: ["hajra-khatoon","ghazanfar-hussain"],
       spouseIds: ["tahira-abbas"],
+      address:"Melbourne, Australia",
       orderId: 4
    },
    "tahira-abbas":{
@@ -2113,6 +2167,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds: ["fakhir-hussain","mehdia-bano"],
      spouseIds: ["shandar-abbas"],
+     address:"Melbourne, Australia",
      orderId: 1
    },
    // raza abbas
@@ -2123,6 +2178,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds: ["shandar-abbas","tahira-abbas"],
       spouseIds: ["zertaj-fatima"],
+      address:"Melbourne, Australia",
       orderId: 1
    },
    "zertaj-fatima":{
@@ -2130,6 +2186,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      displayName: "Zertaj Fatima",
      gender: "F",
      lifeStatus: "alive",
+     address:"Melbourne, Australia",
      parentIds: ["sehr-shabana","aallay-imran-zaidi"],
      spouseIds: ["raza-abbas"],
      orderId: 4
@@ -2139,6 +2196,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      displayName: "Hassan Abbas",
      gender: "M",
      lifeStatus: "alive",
+     address:"Melbourne, Australia",
      parentIds: ["raza-abbas","zertaj-fatima"],
      orderId: 1
      
@@ -2147,6 +2205,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      id: "fiza-abbas",
      displayName: "Fiza Abbas",
      gender: "F",
+     address:"Melbourne, Australia",
      lifeStatus: "alive",
      parentIds: ["raza-abbas","zertaj-fatima"],
       orderId: 2
