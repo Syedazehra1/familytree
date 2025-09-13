@@ -3276,7 +3276,7 @@ export const SAMPLE_FAMILY: FamilyTree =
 },
 "muhammad-aon":{
      id: "muhammad-aon",
-     displayName: "Muhammad Aon",
+     displayName: "Muhammad Mehdi",
      gender: "M",
      lifeStatus: "alive",
      parentIds: ["aon-naqvi","mishal-nadeem"],
@@ -3654,7 +3654,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      gender: "M",
      lifeStatus: "alive",
      spouseIds:["amira-haider"],
-     orderId:2
+   
 },
 "ali-haider-kazmi":{
      id: "ali-haider-kazmi",
