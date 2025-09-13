@@ -51,7 +51,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "M",
       lifeStatus: "deceased",
       deathDate: "1989-01-01",
-      grave: {city: "Karachi Pakistan"  },
+      grave: {city: "Aligarh India"  },
       parentIds: ["ghulam-hussain"],
       spouseIds: ["jawadi-baigam"],
     },
@@ -76,7 +76,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "deceased",
       parentIds: ["khadim-hussain", "jawadi-baigam"],
       spouseIds: ["uroosa-baigam"],
-      grave: { city: "Karachi Pakistan" },
+      grave: { city: "Aligarh India" },
       orderId: 1,
     },
     "uroosa-baigam": {
@@ -85,7 +85,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "F",
       lifeStatus: "deceased",
       spouseIds: ["shakir-hussain"],
-      grave: { city: "Karachi Pakistan" },
+      grave: { city: "Aligarh India" },
       
     },
 
@@ -93,10 +93,10 @@ export const SAMPLE_FAMILY: FamilyTree =
       id: "hassan-abbas",
       displayName: "Hassan Abbas",
       gender: "M",
-      lifeStatus: "deceased",
+      lifeStatus: "alive",
       parentIds: ["shakir-hussain", "uroosa-baigam"],
       spouseIds: ["nasreen"],
-      grave: { city: "Karachi, Pakistan" },
+      address: 'Karachi, Pakistan',
       orderId: 1,
     },
     "nasreen": {
