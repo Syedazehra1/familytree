@@ -373,14 +373,7 @@ export default function FamilyTreePage() {
       {/* Spouses */}
       <Section title="Spouse(s)" icon={<Heart className="h-4 w-4" />}>
         <div className="flex items-center gap-3">
-          <button
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-50"
-            onClick={() => setShowSpouses((s) => !s)}
-          >
-            {showSpouses ? <ChevronLeft className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}{" "}
-            {showSpouses ? "Hide" : "Show"} spouse list
-          </button>
-          <span className="text-xs text-slate-500">Click a spouse, then reveal children of the couple.</span>
+       
         </div>
         {showSpouses && (
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
