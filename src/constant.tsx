@@ -1426,9 +1426,12 @@ export const SAMPLE_FAMILY: FamilyTree =
       parentIds: ["khadim-hussain", "jawadi-baigam"],
       spouseIds: ["kishwar-sultana"],
       orderId: 5,
-      grave:{
-        location: "Karachi, Pakistan",
-      }
+     grave: {
+        city: "Karachi",
+        cemetery: "Wadi-e-Hussain",
+        section: "Block A",
+        notes: "Near central gate.",
+      },
  },
  "kishwar-sultana":{
       id: "kishwar-sultana",
