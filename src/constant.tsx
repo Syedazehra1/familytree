@@ -2579,7 +2579,7 @@ export const SAMPLE_FAMILY: FamilyTree =
    },
    "taseem":{
      id: "taseem",
-     displayName: "Taseem",
+     displayName: "Tasneem",
      gender: "F",
      lifeStatus: "alive",
      spouseIds: ["yawar-abbas"],
@@ -2627,22 +2627,6 @@ export const SAMPLE_FAMILY: FamilyTree =
       orderId: 2
 
 
-   },
-   "sakina":{
-     id: "sakina",
-     displayName: "Sakina",
-     gender: "F",
-     lifeStatus: "alive",
-     parentIds: ["yawar-abbas","taseem"],
-      spouseIds: ["abbas"]
-      ,orderId: 3
-   },
-   "abbas":{
-     id: "abbas",
-     displayName: "Abbas",
-     gender: "M",
-     lifeStatus: "alive",
-     spouseIds: ["sakina"]
    },
    
    "feroza":{
@@ -2776,6 +2760,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      gender: "F",
      lifeStatus: "alive",
      parentIds:['yawar-abbas','taseem'],
+     orderId: 3,
       address: "USA",
      spouseIds: ["abbas-mustafa"]
    },
