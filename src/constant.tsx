@@ -103,9 +103,9 @@ export const SAMPLE_FAMILY: FamilyTree =
       id: "nasreen",
       displayName: "Nasreen",
       gender: "F",
-      lifeStatus: "deceased",
+      lifeStatus: "alive",
       spouseIds: ["hassan-abbas"],
-      grave: { city: "Karachi, Pakistan" },
+      address: 'Karachi, Pakistan',
     },
     "raza-hassan":{
       id: "raza-hassan",
@@ -114,7 +114,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "alive",
       parentIds: ["hassan-abbas", "nasreen"],
       spouseIds: ["hina-raza"],
-      address: "Lahore, Pakistan",
+      address: "Karachi, Pakistan",
       orderId: 1,
     },
     "hina-raza": {
@@ -123,7 +123,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "F",
       lifeStatus: "alive",
       spouseIds: ["raza-hassan"],
-      address: "Lahore, Pakistan",
+      address: "Karachi, Pakistan",
     },
     "faizan-raza": {
       id: "faizan-raza",
@@ -198,7 +198,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "alive",
       parentIds: ["hassan-abbas", "nasreen"],
       spouseIds: ["zahra-jafery"],
-      address: "Lahore, Pakistan",
+      address: "Abu Dhabi, UAE",
       orderId: 2
     },
     "zahra-jafery": {
@@ -207,7 +207,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "F",
       lifeStatus: "alive",
       spouseIds: ["salman"],
-       address: "Karachi, Pakistan",
+       address: "Abu Dhabi, UAE",
     },
     "taha-salman": {
       id: "taha-salman",
@@ -3142,8 +3142,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      displayName: "Areej Kazmeen",
      gender: "F",
      lifeStatus: "alive",
-     parentIds: ["kazmeen","syed-waqar-hussain"],
-      spouseIds: ["salman"]
+     parentIds: ["kazmeen","syed-waqar-hussain"]
+     
       ,orderId: 5
    },
    "salman-zaidi":{
