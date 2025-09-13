@@ -3806,6 +3806,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["fakhir-hussain","mehdia-bano"],
      address:"KSA Saudi Arabia",
      spouseIds:["ambreen-ali"],
+     avatarUrl:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHjgau4QksUJu2uPWZ-20SIr-gzRoyWReyhntu4vH-R3UZuwnBYYH8GUTEI333umZLyCQOPONEAqPfMRyplFuxaVX6tygUh1A-_cU39HCo-A",
      orderId: 3
 },
 "ashiq-hussain":{
@@ -3902,7 +3903,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      gender: "F",
      lifeStatus: "alive",
      spouseIds:["muhammad-ali"],
-     parentIds:["asiq-hussain","fehmeeda-bano"],
+     parentIds:["ashiq-hussain","fehmeeda-bano"],
      address: "Karachi, Pakistan"
 },
 "ghayas-ali":{
@@ -3913,6 +3914,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["muhammad-ali","ambreen-ali"],
      spouseIds:["kisa-mubaraka"],
     address: "Karachi, Pakistan",
+   
      orderId:1
 },
 "kisa-mubarka":{
