@@ -288,7 +288,7 @@ export default function GalleryPage() {
       </div>
 
       
-        // Masonry-style columns; each Card uses 'break-inside-avoid'
+    
         <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
           {items.map((item, idx) => (
             <Card key={item.id} item={item} onClick={() => setLightboxIndex(idx)} />

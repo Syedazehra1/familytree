@@ -4,6 +4,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Heart, Baby, Home, MapPin, Info } from "lucide-react";
 import { SAMPLE_FAMILY } from "../constant";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type Gender = "M" | "F" | "U"; // Male, Female, Unknown
 type LifeStatus = "alive" | "deceased" | "unknown";
@@ -189,6 +190,12 @@ function PersonCard({
   const name = getDisplayName(person);
   const rtl = isRTL(name);
   const badge = lifeBadge(person.lifeStatus);
+
+  // Bigger avatar sizes; even larger when emphasized
+  const avatarSizeCls = emphasize
+    ? "h-28 w-28 sm:h-32 sm:w-32"
+    : "h-20 w-20 sm:h-24 sm:w-24";
+
   return (
     <button
       onClick={onClick}
@@ -198,15 +205,33 @@ function PersonCard({
         emphasize ? "border-sky-300 ring-2 ring-sky-200" : "border-slate-200"
       )}
     >
-      <div className="flex items-start gap-3">
-        <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-slate-100" aria-hidden>
-          {/* Avatar placeholder; wire up person.avatarUrl if available */}
-          {person.avatarUrl ? <Image src={require(`../../public/family/${person.avatarUrl}`)} alt="" className="h-full w-full object-cover" />:
-                    <div className="h-full w-full flex items-center justify-center text-slate-400">👤</div>
-
-          }
-          <div className="h-full w-full flex items-center justify-center text-slate-400">👤</div>
+      <div className="flex items-start gap-4">
+        <div
+          className={clsx(
+            "relative shrink-0 overflow-hidden rounded-xl bg-slate-100",
+            "aspect-square", // ensure square container for fill
+            avatarSizeCls
+          )}
+          aria-hidden
+        >
+          {person.avatarUrl ? (
+            <Image
+              src={`/family/${person.avatarUrl}`} // ensure files live in /public/family/*
+              alt={name}
+              fill
+              sizes="(max-width: 640px) 96px, 128px"
+              className="object-cover"
+              onError={(e) => {
+                // graceful fallback to emoji if image missing
+                const el = (e.target as HTMLImageElement).parentElement;
+                if (el) el.innerHTML = '<div class="h-full w-full flex items-center justify-center text-slate-400 text-3xl">👤</div>';
+              }}
+            />
+          ) : (
+            <div className="h-full w-full flex items-center justify-center text-slate-400 text-3xl">👤</div>
+          )}
         </div>
+
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <h3
@@ -218,7 +243,8 @@ function PersonCard({
             </h3>
             <Badge className={badge.color}>{badge.label}</Badge>
           </div>
-          <div className="mt-1 text-sm text-slate-600 flex flex-wrap items-center gap-3">
+
+          <div className="mt-1 flex flex-wrap items-center gap-3 text-sm text-slate-600">
             {person.address && (
               <span className="inline-flex items-center gap-1">
                 <Home className="h-4 w-4" />
@@ -233,6 +259,7 @@ function PersonCard({
               </span>
             )}
           </div>
+
           {person.notes && (
             <p className="mt-2 line-clamp-2 text-sm text-slate-700">
               <span className="inline-flex items-center gap-1 font-medium text-slate-900">
@@ -247,6 +274,7 @@ function PersonCard({
     </button>
   );
 }
+
 
 function Section({ title, icon, children }: { title: string; icon?: React.ReactNode; children: React.ReactNode }) {
   return (
@@ -298,7 +326,7 @@ export default function FamilyTreePage() {
     setSelectedSpouseId(null);
     setShowChildren(false);
   }, [currentId]);
-
+const router = useRouter();
   const spouses = useMemo(() => (current ? spousesOf(current, data) : []), [current, data]);
   const coupleChildren = useMemo(() => {
     if (!current || !selectedSpouse) return [] as Person[];
@@ -322,8 +350,19 @@ export default function FamilyTreePage() {
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-slate-900">Khadim Hussain Family Tree</h1>
         </div>
-        <div className="w-full sm:w-80">
+       
+        <div className="w-full sm:w-80 flex gap-2 flex-row">
+           <button
+          type="button"
+          onClick={() => {
+            router.push("/gallery");
+          }}
+          className=" rounded-md bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-slate-900/10 hover:bg-slate-100"
+        >
+          Gallery
+        </button>
           <div className="relative">
+
             <input
               type="text"
               value={q}
