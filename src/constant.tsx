@@ -1992,7 +1992,8 @@ export const SAMPLE_FAMILY: FamilyTree =
     address: "Karachi, Pakistan",
    parentIds: ["allay","sadiq-hussain"],
    spouseIds: ["azhara"]
-  ,orderId: 3
+  ,orderId: 3,
+  avatarUrl: "mesum.jpg"
  },
  "azhara":{
    id: "azhara",
@@ -3844,7 +3845,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      gender: "F",
      address: "Karachi, Pakistan",
      lifeStatus: "alive",
-     spouseIds:["ghayas-ali"]
+     spouseIds:["ghayas-ali"],
+     avatarUrl: "kisa.jpeg",
 },
 "aun-ali":{
      id: "aun-ali",
@@ -3854,15 +3856,17 @@ export const SAMPLE_FAMILY: FamilyTree =
      address: 'Skardu Pakistan',
      parentIds: ["muhammad-ali","ambreen-ali"],
      spouseIds:["sabeena-brohi"],
-     orderId: 2
+     orderId: 2,
+     avatarUrl:"aun.jpeg"
 },
 "sabeena-brohi":{
      id: "sabeena-brohi",
      displayName: "Sabeena Brohi",
      gender: "F",
      lifeStatus: "alive",
-     spouseIds:["aun-ali"]
-  
+     spouseIds:["aun-ali"],
+       address: 'Skardu Pakistan',
+       avatarUrl:"sabeena.jpeg"
 },
 "taha-ali":{
      id: "taha-ali",
@@ -3871,7 +3875,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds: ["muhammad-ali","ambreen-ali"],
      orderId: 3,
-     address:'Malaysia*'
+     address:'Malaysia*',
+     avatarUrl:"taha.jpeg"
     //  spouseIds:["zahra-ali"]
 },
 "ayrish-ali":{
