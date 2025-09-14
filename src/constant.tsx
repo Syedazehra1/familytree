@@ -3881,7 +3881,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds: ["muhammad-ali","ambreen-ali"],
       orderId: 4,
-      address:'Malaysia'
+      address:'Malaysia',
+      avatarUrl:"ayrish-ali.jpeg"
     //  spouseIds:["taha-ali"]
 },
 "amira-haider":{
