@@ -401,7 +401,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "alive",
       parentIds: ["ali-imam", "noor-fatima"],
       spouseIds: ["manzoor-jaffery"],
-      address: "United States",
+      address: "Canada",
       orderId: 2,
     },
     "manzoor-jaffery": {
@@ -410,7 +410,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "M",
       lifeStatus: "alive",
       spouseIds: ["batool"],
-      address: "United States",
+      address: "Canada",
     },
     "daniyal-jaffery": {
       id: "daniyal-jaffery",
@@ -418,7 +418,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "M",
       lifeStatus: "alive",
       parentIds: ["batool", "manzoor-jaffery"],
-      address: "Karachi, Pakistan",
+      address: "Canada",
       orderId: 1
     },
 
@@ -429,7 +429,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "alive",
       parentIds: ["ali-imam", "noor-fatima"],
       spouseIds: [],
-      address: "Karachi, Pakistan",
+      address: "Canada",
     },
     
     "sitara": {
