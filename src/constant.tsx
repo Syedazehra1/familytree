@@ -3804,7 +3804,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      gender: "F",
       lifeStatus: "deceased",
      spouseIds:["fakhir-hussain"],
-     grave: { city: "Karachi Pakistan"}
+     grave: { city: "Karachi Pakistan"},
+     avatarUrl:"mehdia.jpeg"
 },
 "muhammad-ali":{
      id: "muhammad-ali",
