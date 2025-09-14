@@ -54,6 +54,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       grave: {city: "Aligarh India"  },
       parentIds: ["ghulam-hussain"],
       spouseIds: ["jawadi-baigam"],
+       avatarUrl: "khadm-hussain.jpeg",
     },
 
     // Wife
@@ -65,6 +66,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       deathDate: "2002-01-01",
       spouseIds: ["khadim-hussain"],
       grave: { city: "Karachi Pakistan" },
+      avatarUrl: "jawadi-begum.jpeg",
 
     },
 
@@ -3806,7 +3808,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["fakhir-hussain","mehdia-bano"],
      address:"KSA Saudi Arabia",
      spouseIds:["ambreen-ali"],
-     avatarUrl:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHjgau4QksUJu2uPWZ-20SIr-gzRoyWReyhntu4vH-R3UZuwnBYYH8GUTEI333umZLyCQOPONEAqPfMRyplFuxaVX6tygUh1A-_cU39HCo-A",
+    avatarUrl: "khadm-hussain.jpeg",
      orderId: 3
 },
 "ashiq-hussain":{

@@ -3,6 +3,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Heart, Baby, Home, MapPin, Info } from "lucide-react";
 import { SAMPLE_FAMILY } from "../constant";
+import Image from "next/image";
 
 type Gender = "M" | "F" | "U"; // Male, Female, Unknown
 type LifeStatus = "alive" | "deceased" | "unknown";
@@ -200,7 +201,7 @@ function PersonCard({
       <div className="flex items-start gap-3">
         <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-slate-100" aria-hidden>
           {/* Avatar placeholder; wire up person.avatarUrl if available */}
-          {person.avatarUrl ? <img src={person.avatarUrl} alt="" className="h-full w-full object-cover" />:
+          {person.avatarUrl ? <Image src={require(`../../public/family/${person.avatarUrl}`)} alt="" className="h-full w-full object-cover" />:
                     <div className="h-full w-full flex items-center justify-center text-slate-400">👤</div>
 
           }
