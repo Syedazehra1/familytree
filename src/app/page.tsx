@@ -361,6 +361,15 @@ const router = useRouter();
         >
           Gallery
         </button>
+        <button
+          type="button"
+          onClick={() => {
+            router.push("/contact");
+          }}
+          className=" rounded-md bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-slate-900/10 hover:bg-slate-100"
+        >
+          Contact
+        </button>
           <div className="relative">
 
             <input

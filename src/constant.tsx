@@ -20,7 +20,7 @@ export interface Person {
     city?: string;
     cemetery?: string;
     section?: string;
-    location?: string; // GPS or row/plot
+    location?: string; // GPS or row/plot — can be used as "grave no"
     notes?: string;
   };
   spouseIds?: string[]; // all spouses (husband/wife)
@@ -2374,8 +2374,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      spouseIds: ["naveed-abbas"]
    },
-   "muhammad":{
-     id: "muhammad",
+   "muhammad-abbas":{
+     id: "muhammad-abbas",
      displayName: "Muhammad",
      gender: "M",
      lifeStatus: "alive",
@@ -2873,7 +2873,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       ,orderId: 4
    },
    "sadaf-akbar":{
-     id: "sadaf",
+     id: "sadaf-akbar",
      displayName: "Sadaf",
      gender: "F",
      address: "USA",
@@ -2983,7 +2983,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      spouseIds: ["fakhar"]
    },
    "muhammad-fakhar":{
-     id: "muhammad",
+     id: "muhammad-fakhar",
      displayName: "Muhammad",
      gender: "M",
      address: "USA",
@@ -2992,7 +2992,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      orderId:1
    },
    "tatheer-fakhar":{
-     id: "tatheer",
+     id: "tatheer-fakhar",
      displayName: "Tatheer",
      gender: "F",
      address: "USA",
@@ -3099,7 +3099,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       // spouseIds: ["syed-waqar-hussain"]
    },
    "abiha-dilawar":{
-     id: "abiha",
+     id: "abiha-dilawar",
      displayName: "Abiha",
      gender: "F",
      lifeStatus: "alive",
