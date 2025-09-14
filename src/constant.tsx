@@ -471,6 +471,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       spouseIds: ["mahmood-akhtar"],
       address: "Aligarh India",
       orderId: 1,
+      avatarUrl: "nadra-zaidi.jpeg",
     },
     "mahmood-akhtar": {
       id: "mahmood-akhtar",
@@ -2907,7 +2908,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      address: "USA",
      parentIds: ["feroza","sayedain-zaidi"],
       spouseIds: ["ponam"]
-      ,orderId: 5
+      ,orderId: 5,
+      avatarUrl:"muzamil.jpeg"
    },
    "ponam":{
      id: "ponam",
@@ -3231,7 +3233,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "deceased",
      grave:{
        city: "Karachi Pakistan"},
-     spouseIds: ["kazmeen-khatoon"]
+     spouseIds: ["kazmeen-khatoon"],
+      avatarUrl: "waqar.jpeg",
    },
    "irshaad":{
      id: "irshaad",
@@ -3762,7 +3765,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["khadim-hussain","jawadi-baigam"],
   grave: { city: "Karachi Pakistan" },
      orderId: 9,
-     spouseIds:["syed-abrar-hussain"]
+     spouseIds:["syed-abrar-hussain"],
+     avatarUrl:"gayor-fatima.jpeg"
 
 },
 "syed-abrar-hussain":{
@@ -3790,7 +3794,8 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["khadim-hussain","jawadi-baigam"],
      spouseIds:['mehdia-bano'],
      grave: { city: "Multan Pakistan" },
-     orderId: 8
+     orderId: 8,
+     avatarUrl:"fakhir-hussain.jpeg"
 },
 "mehdia-bano":{
      id: "mehdia-bano",
@@ -3808,105 +3813,19 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["fakhir-hussain","mehdia-bano"],
      address:"KSA Saudi Arabia",
      spouseIds:["ambreen-ali"],
-    avatarUrl: "khadm-hussain.jpeg",
+    avatarUrl: "muhammad-ali.jpeg",
      orderId: 3
 },
-"ashiq-hussain":{
-     id: "ashiq-hussain",
-     displayName: "Ashiq Hussain",
-     gender: "M",
-     lifeStatus: "deceased",
-     spouseIds: ["fehmeeda-bano"],
-     grave: {
-      cemetery: "Wadi-e-Hussain",
-      location: "Karachi, Pakistan",
-   
-     }
-    },
-"fehmeeda-bano":{
-     id: "fehmeeda-bano",
-     displayName: "Fehmeeda Bano",
-     gender: "F",
-     lifeStatus: "alive",
-     spouseIds:["ashiq-hussain"],
-     address: "Karachi, Pakistan"
-},
-"kashif-naqvi":{
-     id: "kashif-naqvi",
-     displayName: "Kashif Naqvi",
-     gender: "M",
-      lifeStatus: "alive",
-      parentIds: ["ashiq-hussain","fehmeeda-bano"],
-      spouseIds:["amber-naqvi"],
-      orderId:1
-},
-"amber-naqvi":{
-     id: "amber-naqvi",
-     displayName: "Amber Naqvi",
-     gender: "F",
-     lifeStatus: "alive",
-     spouseIds:["kashif-naqvi"]
-},
-"jarre":{
-      id: "jarre",
-      displayName: "Jarre",
-      gender: "M",
-      lifeStatus: "alive",
-      parentIds: ["kashif-naqvi","amber-naqvi"],
-      orderId:2
-},
-"mushke-zehra":{ 
-     id: "mushke-zehra",
-     displayName: "Mushke Zehra",
-     gender: "F",
-     lifeStatus: "alive",
-     parentIds: ["kashif-naqvi","amber-naqvi"],
-     orderId:1
-
-},
-"asim-naqvi":{  
-     id: "asim-naqvi", 
-     displayName: "Asim Naqvi",
-     gender: "M",
-      lifeStatus: "alive",
-      parentIds: ["ashiq-hussain","fehmeeda-bano"],
-      orderId:2,
-      address: "Karachi, Pakistan",
-      spouseIds:["saba-asim"]
-},
-"saba-asim":{
-      id: "saba-asim",
-      displayName: "Saba Asim",
-      gender: "F",
-      lifeStatus: "alive",
-      spouseIds:["asim-naqvi"]
-},
-"sania-zehra-asim":{  
-     id: "sani-zehra-asim",
-     displayName: "Sani Zehra-Asim",
-     gender: "F",
-     lifeStatus: "alive",
-     parentIds: ["asim-naqvi","saba-asim"],
-     orderId:1
 
 
-},
-"qirath-zehra":{
-      id: "qirath-zehra",
-      displayName: "Qirath Zehra",
-      gender: "F",
-      lifeStatus: "alive",
-      parentIds: ["asim-naqvi","saba-asim"],
-      orderId:2
-},
 "ambreen-ali":{
      id: "ambreen-ali",
      displayName: "Ambreen Ali",
      gender: "F",
      lifeStatus: "alive",
      spouseIds:["muhammad-ali"],
-     parentIds:["ashiq-hussain","fehmeeda-bano"],
-     address: "Karachi, Pakistan"
+     address: "Karachi, Pakistan",
+     avatarUrl: "ambreen-ali.jpeg",
 },
 "ghayas-ali":{
      id: "ghayas-ali",
@@ -3916,7 +3835,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds: ["muhammad-ali","ambreen-ali"],
      spouseIds:["kisa-mubaraka"],
     address: "Karachi, Pakistan",
-   
+    avatarUrl: "ghayas-ali.jpeg",
      orderId:1
 },
 "kisa-mubarka":{
