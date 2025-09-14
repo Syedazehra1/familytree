@@ -11,6 +11,7 @@ import {
   Info,
   Tag,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 /**
  * Image Gallery — Vertical (masonry) & Horizontal (scroll rows)
@@ -268,15 +269,23 @@ export default function GalleryPage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const items = useMemo(() => ITEMS, []);
-
+  const router = useRouter();
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <header className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900">Image Gallery</h1>
-      
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => router.back()}
+            aria-label="Go back"
+            className="inline-flex items-center gap-2 rounded-md border bg-white px-3 py-1 text-sm shadow-sm hover:bg-slate-50"
+          >
+            <ChevronLeft className="h-4 w-4" /> Back
+          </button>
+
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight text-slate-900">Image Gallery</h1>
+          </div>
         </div>
-   
       </header>
 
       {/* Optional tags legend */}
