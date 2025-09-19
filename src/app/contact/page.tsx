@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { Phone, Mail, MapPin, Info, Search, Filter, Copy, Skull, Heart } from "lucide-react";
+import { Phone, Mail, MapPin, Info, Search, Filter, Copy, Skull, Heart, ArrowLeft, ChevronLeft } from "lucide-react";
 import { SAMPLE_FAMILY } from "../../constant";
+import Image from "next/image";
 
 // If you already exported types from your constants file, you can import them instead
 // Re-declaring here for isolation
@@ -35,9 +36,41 @@ export interface Person {
 // You can move phone/email directly into Person later if desired.
 const CONTACTS: Record<string, { phone?: string; email?: string }> = {
   // examples — add real ones as you have them
-  "hassan-abbas": { phone: "+92 300 0000000", email: "hassan@example.com" },
-  "nasreen": { phone: "+92 321 1111111" },
-  "ghayas-ali":{ phone: "+92 321 2222222" },
+  "hassan-abbas": { phone: "0300 2196569 ", email: "hajaffrey@gmail.com" },
+  "ghayas-ali":{ phone: "+92 300 2661456", email: "ghayas110@gmail.com" },
+  "kisa-mubarka": { phone: "+92 314 2087091", email: "zehrariz531@gmail.com" },
+  "messam": { phone: "03357586707", email: "measumhasan27@gmail.com" },
+  "lubaba": { phone: "03001234567", email:"measumhasan27@gmail.com" },
+  "akbar": { phone: "03001234567", email:"measumhasan27@gmail.com" },
+  "azra": { phone: "03001234567", email:"measumhasan27@gmail.com" },
+  "Imran": { phone: "03318922637", email:"simranhz1973@gmail.com" },
+  "jawad-mushir":{phone: "03322379912", email:"jawwadprkhi@gmail.com"},
+  "nida":{phone: "0470527985", email:"Nidazehra93@gmail.com"},
+  "faheem-mushir":{phone: "03414446665", email:"faheem.mushir@gmail.com"},
+  "kumail":{phone: "+15138889153", email:"Kumailjafre@gmail.com"},
+  "kaneez-fatima":{phone: "03340003163", email:"afsheenjaffri@hotmail.com"},
+  "kamran-mushir":{phone: "03002778817", email:"kamran.mushir@gmail.com"},
+  "abid":{phone: "03361156234", email:"Smabid17@gmail.com "},
+  "dilawar":{phone: "03339127478", email:"dilawarbaqir@gmail.com"},
+  "fozia":{phone: "03339127478", email:"foziadilawar@gmail.com"},
+  "abiha-dilawar":{phone: "03339127478", email:"dilawarbaqir@gmail.com"},
+  "abbas-dilawar":{phone: "03339127478", email:"dilawarbaqir@gmail.com"},
+  "hussain-dilawar":{phone: "03339127478", email:"dilawarbaqir@gmail.com"},
+  "tahira-abbas":{phone: "0434625727", email:"shandarabbas@hotmail.com"},
+  "shandar-abbas":{phone: "0434625727", email:"shandarabbas@hotmail.com"},
+  "mohsin-abbas":{phone: "0469828603", email:"mohsinabbas782@gmail.com"},
+  "naseem-abbas":{phone: "03333441618", email:"naseemabbas782@gmail.com"},
+  "hilal":{phone: "0470488304", email:"Hilal0208@live.com"},
+  "komal":{phone: "+971585446206", email:"komalzehra24@gmail.com"},
+  "sajjad":{phone: "+971507909469", email:"Sajjadahmad.sa@gmail.com"},
+  "abis":{phone: "+971507909469", email:"komalzehra24@gmail.com"},
+  "joan":{phone: "+971507909469", email:"joan@gmail.com"},
+  "sani":{phone: "0416145683", email:"ezehrasani@gmail.com"},
+  "mehdi":{phone: "+61405851852", email:"mehdiabidi254@gmail.com"},
+  "naqi":{phone: "0416145683", email:"naqi.mehr@gmail.com"},
+  "iqtida-mehdi-miqdad":{phone: "03331303899", email:"siqtida@gmail.com"},
+  "naveed-abbas":{phone: "03001234567", email:"naveed@gmail.com"},
+  "shoa-zehra":{phone: "9825192110", email:"shoazehra110@gmail.com"}
 };
 
 /** Helpers */
@@ -124,6 +157,19 @@ function Entry({ person }: { person: Person }) {
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <div className="flex items-center gap-2">
+            {person.avatarUrl ? (
+              // If you have avatar URLs, use them. Otherwise, you can use initials or a placeholder image.
+             <Image
+                        src={`/family/${person.avatarUrl}`} // ensure files live in /public/family/*
+                        alt={name}
+                        width={40}
+                        height={40}
+                        className="relative h-10 w-10 rounded-full object-cover ring-1 ring-slate-200"
+                      
+                      />
+            ) : (
+            null
+            )}
             <h3
               className={clsx("truncate text-base font-semibold text-slate-900", rtl && "rtl")}
               style={rtl ? ({ direction: "rtl" } as React.CSSProperties) : undefined}
@@ -220,6 +266,17 @@ export default function PhoneBookPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <header className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+          <div className="flex items-center gap-3">
+          <button
+            onClick={() => window.history.back()}
+            aria-label="Go back"
+            className="inline-flex items-center gap-2 rounded-md border bg-white px-3 py-1 text-sm shadow-sm hover:bg-slate-50"
+          >
+            <ChevronLeft className="h-4 w-4" /> Back
+          </button>
+
+        </div>
         <div>
           <h1 className="text-2xl font-bold tracking-tight text-slate-900">Family PhoneBook</h1>
           <p className="mt-1 text-sm text-slate-600">Search, filter, and view contact details for living members or burial details for deceased members.</p>
