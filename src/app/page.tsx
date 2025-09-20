@@ -287,6 +287,56 @@ function Section({ title, icon, children }: { title: string; icon?: React.ReactN
   );
 }
 
+
+/* =========================
+   Login Modal
+========================= */
+function LoginModal({ onSuccess }: { onSuccess: () => void }) {
+  const [treeName, setTreeName] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleLogin = () => {
+    if (treeName === "khadim-hussain" && password === "3844") {
+      localStorage.setItem("treeName", treeName);
+      localStorage.setItem("treePassword", password);
+      onSuccess();
+    } else {
+      setError("Invalid Tree Name or Password");
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/70 backdrop-blur-sm">
+      <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-sm">
+        <h2 className="text-lg font-bold mb-4">Login to Family Tree</h2>
+        <input
+          type="text"
+          placeholder="Tree Name"
+          value={treeName}
+          onChange={(e) => setTreeName(e.target.value)}
+          className="w-full mb-3 rounded-lg border px-3 py-2"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full mb-3 rounded-lg border px-3 py-2"
+        />
+        {error && <p className="text-sm text-red-500 mb-2">{error}</p>}
+        <button
+          onClick={handleLogin}
+          className="w-full rounded-lg bg-sky-600 text-white px-3 py-2 hover:bg-sky-700"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  );
+}
+
+
 /* =========================
    Page Component
 ========================= */
@@ -297,10 +347,11 @@ export default function FamilyTreePage() {
   useEffect(() => {
     if (warnings.length) console.warn("[FamilyTree warnings]", warnings);
   }, [warnings]);
-
-  const [data, setData] = useState<FamilyTree>(NORMALIZED_FAMILY);
-
+  
+  
   // Explorer state
+  const [data, setData] = useState<FamilyTree>(NORMALIZED_FAMILY);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentId, setCurrentId] = useState<string>(data.rootId);
   const current = data.persons[currentId];
   const [selectedSpouseId, setSelectedSpouseId] = useState<string | null>(null);
@@ -326,6 +377,13 @@ export default function FamilyTreePage() {
     setSelectedSpouseId(null);
     setShowChildren(false);
   }, [currentId]);
+  useEffect(() => {
+    const tn = localStorage.getItem("treeName");
+    const pw = localStorage.getItem("treePassword");
+    if (tn === "khadim-hussain" && pw === "3844") {
+      setIsAuthenticated(true);
+    }
+  }, []);
 const router = useRouter();
   const spouses = useMemo(() => (current ? spousesOf(current, data) : []), [current, data]);
   const coupleChildren = useMemo(() => {
@@ -344,6 +402,9 @@ const router = useRouter();
     setCurrentId(targetId);
   }
 
+  if (!isAuthenticated) {
+    return <LoginModal onSuccess={() => setIsAuthenticated(true)} />;
+  }
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 bg-white">
       <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
