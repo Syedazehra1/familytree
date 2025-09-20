@@ -70,7 +70,8 @@ const CONTACTS: Record<string, { phone?: string; email?: string }> = {
   "naqi":{phone: "0416145683", email:"naqi.mehr@gmail.com"},
   "iqtida-mehdi-miqdad":{phone: "03331303899", email:"siqtida@gmail.com"},
   "naveed-abbas":{phone: "03001234567", email:"naveed@gmail.com"},
-  "shoa-zehra":{phone: "9825192110", email:"shoazehra110@gmail.com"}
+  "shoa-zehra":{phone: "9825192110", email:"shoazehra110@gmail.com"},
+  "sidra":{phone: "03353389880", email:"syedasidra192@gmail.com "}
 };
 
 /** Helpers */

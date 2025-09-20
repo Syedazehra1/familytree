@@ -220,7 +220,7 @@ function PersonCard({
               alt={name}
               fill
               sizes="(max-width: 640px) 96px, 128px"
-              className="object-cover"
+              className="object-contaain"
               onError={(e) => {
                 // graceful fallback to emoji if image missing
                 const el = (e.target as HTMLImageElement).parentElement;
