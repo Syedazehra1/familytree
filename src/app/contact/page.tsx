@@ -71,7 +71,10 @@ const CONTACTS: Record<string, { phone?: string; email?: string }> = {
   "iqtida-mehdi-miqdad":{phone: "03331303899", email:"siqtida@gmail.com"},
   "naveed-abbas":{phone: "03001234567", email:"naveed@gmail.com"},
   "shoa-zehra":{phone: "9825192110", email:"shoazehra110@gmail.com"},
-  "sidra":{phone: "03353389880", email:"syedasidra192@gmail.com "}
+  "sidra":{phone: "03353389880", email:"syedasidra192@gmail.com "},
+  "uzma":{phone: "03335355128", email:"Suzehra173@gmail.com"},
+  "amira-haider":{phone: "03367078024", email:"amira.haider@gmail.com"},
+  "mustafa-haider":{phone: "03007078024", email:"mustafa.haider@gmail.com"}
 };
 
 /** Helpers */
