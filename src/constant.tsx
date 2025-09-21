@@ -3995,7 +3995,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      address: "Karachi, Pakistan",
 
      spouseIds:["amira-haider"],
-      // avatarUrl:"mustafa-haider.jpg"
+       avatarUrl:"mustafa.jpeg"
    
 },
 "ali-haider-kazmi":{
