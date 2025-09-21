@@ -87,7 +87,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "F",
       lifeStatus: "deceased",
       spouseIds: ["shakir-hussain"],
-      grave: { city: "Aligarh India" },
+      grave: { city: "Lahore Pakistan" },
       
     },
 
@@ -100,6 +100,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       spouseIds: ["nasreen"],
       address: 'Karachi, Pakistan',
       orderId: 1,
+      avatarUrl: "hassan-abbas-jafery.webp"
    
     },
     "nasreen": {
@@ -377,6 +378,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       spouseIds: ["noor-fatima"],
       grave: { city: "Karachi Pakistan" },
       orderId: 1,
+      avatarUrl: "ali-imam.jpeg"
     },
     "noor-fatima": {
       id: "noor-fatima",
@@ -385,6 +387,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       lifeStatus: "alive",
       spouseIds: ["ali-imam"],
        address: "Karachi, Pakistan",
+      avatarUrl: "noor.jpeg"
     },
     "hassan-imam": {
       id: "hassan-imam",
@@ -432,7 +435,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       parentIds: ["ali-imam", "noor-fatima"],
       spouseIds: [],
       address: "Canada",
-
+      avatarUrl: "kaneez-fatima.jpeg",
     },
     
     "sitara": {
@@ -4050,7 +4053,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      spouseIds:["murtuza"],
      orderId:1,
      address: "Karachi, Pakistan",
-      avatarUrl:"uzma.jpg"
+      avatarUrl:"uzma.jpeg"
 
 },
 "murtuza":{
