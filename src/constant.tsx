@@ -3536,6 +3536,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      address:"USA",
      orderId:1,
       avatarUrl:"nadeem-mushir.png"
+      
 },
 "Fatima-nadeem":{
      id: "Fatima-nadeem",
