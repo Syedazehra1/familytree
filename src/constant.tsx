@@ -2246,7 +2246,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     address:"Qom Iran",
      parentIds: ["raza-abbas","zertaj-fatima"],
      orderId: 1,
-     avatarUrl: "hassan-raza.jpg"
+     avatarUrl: "hassan-raza.jpeg"
      
    },
    "fiza-abbas":{
@@ -2354,7 +2354,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      address:"Melbourne, Australia",
      parentIds:["kinza-abbas","shamoon"],
     orderId: 1,
-      avatarUrl: "narjis-kinza.jpeg"
+      avatarUrl: "nargis-kinza.jpeg"
       
    },
    "Marium":{
@@ -3536,7 +3536,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      address:"USA",
      orderId:1,
       avatarUrl:"nadeem-mushir.png"
-      
+
 },
 "Fatima-nadeem":{
      id: "Fatima-nadeem",
