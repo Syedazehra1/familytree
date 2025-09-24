@@ -74,7 +74,21 @@ const CONTACTS: Record<string, { phone?: string; email?: string }> = {
   "sidra":{phone: "03353389880", email:"syedasidra192@gmail.com "},
   "uzma":{phone: "03335355128", email:"Suzehra173@gmail.com"},
   "amira-haider":{phone: "03367078024", email:"amira.haider@gmail.com"},
-  "mustafa-haider":{phone: "03007078024", email:"mustafa.haider@gmail.com"}
+  "mustafa-haider":{phone: "03007078024", email:"mustafa.haider@gmail.com"},
+  "sadaf-haider":{phone: "03442138531", email:"Measumhasan27@gmail.com"},
+  "ammar":{phone: "03357586707", email:"Measumhasan27@gmail.com"},
+  "kisa":{phone: "'03357586707", email:"Measumhasan27@gmail.com"},
+  "rahima-fatima":{phone: "03001234567", email:"rahima@gmail.com"},
+  "haider-abbas":{phone: "7417876062", email:"abbashyderzaidi@gmail.com"},
+  "aalay-ali":{phone: "+61424446189", email:"alealizaidi@gmail.com"},
+  "erum-abbas":{phone: "+61403089215", email:"erum.abbas@outlook.com"},
+  "mehak":{phone: "0469-398-631 ", email:"Mehakfatima73@gmail.com"},
+
+
+
+
+
+
 };
 
 /** Helpers */

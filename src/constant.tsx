@@ -1093,7 +1093,8 @@ export const SAMPLE_FAMILY: FamilyTree =
       parentIds: ["shaheen-zaidi", "ali-jawad-zaidi"],
       spouseIds: ["midhat-fatima"],
      address: 'India',
-      orderId: 1
+      orderId: 1,
+      avatarUrl: "haider-abbas.jpg"
     },
     "midhat-fatima": {
       id: "midhat-fatima",
@@ -1946,7 +1947,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     address: "Karachi, Pakistan",
    spouseIds: ["kisa"],
    orderId: 1,
-    avatarUrl: "ammar.jpeg"
+    avatarUrl: "hassan-ammar.jpg"
  },
  "kisa":{
    id: "kisa",
@@ -1954,16 +1955,18 @@ export const SAMPLE_FAMILY: FamilyTree =
    gender: "F",
    lifeStatus: "alive",
    spouseIds: ["ammar"],
-    address: "Karachi, Pakistan",
+    address: "Karachi, Pakistan"
+    ,avatarUrl: "almas.jpg"
  },
- "mhammad-mohsin":{
-    id: "mhammad-mohsin",
-    displayName: "Mhammad Mohsin",
+ "muhammad-mohsin":{
+    id: "muhammad-mohsin",
+    displayName: "Muhammad Mohsin",
     gender: "M",
     lifeStatus: "alive",
     parentIds: ["ammar","kisa"],
     address: "Karachi, Pakistan",
-    orderId: 1
+    orderId: 1,
+    avatarUrl: "muhammad-mohsin.jpg"
  },
  "rahima-fatima":{
     id: "rahima-fatima",
@@ -1972,7 +1975,8 @@ export const SAMPLE_FAMILY: FamilyTree =
     lifeStatus: "alive",
     parentIds: ["ammar","kisa"],
     address: "Karachi, Pakistan",
-    orderId: 2
+    orderId: 2,
+    avatarUrl: "rahima.jpg"
  },
  "kumail-haider":{
    id: "kumail-haider",
@@ -1987,11 +1991,12 @@ export const SAMPLE_FAMILY: FamilyTree =
  },
  "sadaf-haider":{
    id: "sadaf-haider",
-   displayName: "Sadaf-haider",
+   displayName: "Sadaf Raza",
     address: "Karachi, Pakistan",
    gender: "F",
    lifeStatus: "alive",
-   spouseIds: ["kumail-haider"]
+   spouseIds: ["kumail-haider"],
+   avatarUrl: "sadaf-raza.jpg"
  },
  "muhammad-arif-hassan":{
    id: "muhammad-arif-hassan",
@@ -2000,7 +2005,8 @@ export const SAMPLE_FAMILY: FamilyTree =
    lifeStatus: "alive",
     address: "Karachi, Pakistan",
    parentIds: ["kumail-haider","sadaf-haider"],
-    orderId: 1
+    orderId: 1,
+    avatarUrl: "arif-hassan.jpg"
  },
  "muhammadf-taqi-jawad":{
    id: "muhammadf-taqi-jawad",
@@ -2010,6 +2016,7 @@ export const SAMPLE_FAMILY: FamilyTree =
     address: "Karachi, Pakistan",
    parentIds: ["kumail-haider","sadaf-haider"],
     orderId: 2
+    ,avatarUrl: "taqi-jawad.jpg"
  },
  "sadiqi-fatima":{
     id: "sadiqi-fatima",
@@ -2018,7 +2025,8 @@ export const SAMPLE_FAMILY: FamilyTree =
     lifeStatus: "alive",
     parentIds: ["kumail-haider","sadaf-haider"],
     address: "Karachi, Pakistan",
-    orderId: 3
+    orderId: 3,
+    avatarUrl: "sidiqa.jpg"
   },
 
  "messam":{
@@ -2299,7 +2307,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds:["shandar-abbas","tahira-abbas"],
       spouseIds: ["aalay-ali"]
       ,orderId:2,
-      avatarUrl: "erum.jpeg"
+      avatarUrl: "erum.jpg"
    },
    "aalay-ali":{
      id: "aalay-ali",
@@ -2310,7 +2318,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds:["sehr-shabana","aallay-imran-zaidi"],
      spouseIds: ["erum-abbas"]
       ,orderId:1,
-      avatarUrl: "ale-ali.jpeg"
+      avatarUrl: "ale-ali.jpg"
    },
    "aalay-abbas":{
      id: "aalay-abbas",
@@ -2320,7 +2328,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds:["erum-abbas","aalay-ali"],
      orderId:1,
-     avatarUrl: "ale-abbas.jpeg"
+     avatarUrl: "ale-abbas.jpg"
     
    },
    "hani-muslim":{
@@ -2331,7 +2339,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      lifeStatus: "alive",
      parentIds:["erum-abbas","aalay-ali"],
       orderId:2,
-      avatarUrl: "hani.jpeg"
+      avatarUrl: "hani.jpg"
      
    },
    "kinza-abbas":{
@@ -3220,30 +3228,33 @@ export const SAMPLE_FAMILY: FamilyTree =
    },
    "muhammad-ayan":{
      id: "muhammad-ayan",
-     displayName: "Muhammad Ayan",
+     displayName: "Syed Muhammad Ayan Mehdi ",
      gender: "M",
      lifeStatus: "alive",
      parentIds: ["muntazir","mehak"],
      orderId: 1,
-      address:"Melbourne Australia"
+      address:"Melbourne Australia",
+      avatarUrl: "ayan.jpg"
    },
    "ali-asghar":{
      id: "ali-asghar",
-     displayName: "Ali Asghar",
+     displayName: "Syed Ali Asghar Mehdi ",
      gender: "M",
      lifeStatus: "alive",
      parentIds: ["muntazir","mehak"],
       orderId: 2,
-       address:"Melbourne Australia"
+       address:"Melbourne Australia",
+      avatarUrl: "ali-asghar.jpg"
    },
    "zahra-muntazir":{
      id: "zahra-muntazir",
-     displayName: "Zahra",
+     displayName: "Zahra Fatima",
      gender: "F",
      lifeStatus: "alive",
      parentIds: ["muntazir","mehak"],
       orderId: 3,
-       address:"Melbourne Australia"
+       address:"Melbourne Australia",
+      avatarUrl: "zahra.jpg"
       // spouseIds: ["syed-waqar-hussain"]
    },
    "kiran-farzana":{
@@ -3781,6 +3792,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      spouseIds:['rabab-Fatima'],
      orderId:4,
      address:"Karachi Pakistan",
+      avatarUrl:"jawad-mushir.jpg"
      
 },
 "rabab-Fatima":{
