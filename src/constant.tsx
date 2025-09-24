@@ -455,7 +455,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "M",
       lifeStatus: "deceased",
       parentIds: ["khadim-hussain", "jawadi-baigam"],
-        grave: { city: "Karachi Pakistan" },
+        grave: { city: "India Aligarh" },
       spouseIds: ["shakra-begum"],
       avatarUrl: "nadir.jpeg",
       orderId: 3,
@@ -466,7 +466,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       gender: "F",
        lifeStatus: "deceased",
       spouseIds: ["nadir-hussain"],
-      grave: { city: "Karachi Pakistan" },
+      grave: { city: "India Aligarh" },
       avatarUrl: "shakra-begum.jpeg",
     },
     // Example daughter
@@ -2285,7 +2285,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds:["shandar-abbas","tahira-abbas"],
       spouseIds: ["eraj-abbas"],
       orderId:4,
-      avatarUrl: "mohsin.jpeg"
+      avatarUrl: "mohsin-abbas.jpg"
       
    },
    "eraj-abbas":{
