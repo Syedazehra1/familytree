@@ -2285,7 +2285,7 @@ export const SAMPLE_FAMILY: FamilyTree =
      parentIds:["shandar-abbas","tahira-abbas"],
       spouseIds: ["eraj-abbas"],
       orderId:4,
-      avatarUrl: "mohsin-abbas.jpg"
+      avatarUrl: "mohsin-abbas.jpeg"
       
    },
    "eraj-abbas":{
