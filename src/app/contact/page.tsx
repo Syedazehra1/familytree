@@ -83,6 +83,16 @@ const CONTACTS: Record<string, { phone?: string; email?: string }> = {
   "aalay-ali":{phone: "+61424446189", email:"alealizaidi@gmail.com"},
   "erum-abbas":{phone: "+61403089215", email:"erum.abbas@outlook.com"},
   "mehak":{phone: "0469-398-631 ", email:"Mehakfatima73@gmail.com"},
+  "fatima":{phone: "03323964151", email:"fatima@gmail.com"},
+  "moosa":{phone: "+92 334 3091771", email:"alimoosa903@gmail.com"},
+  "narjis":{phone: "0092-3002238369", email:"narjis@gmail.com"},
+  "reza-hassan":{phone: "0333-5240670", email:"reza.hassan@gmail.com"},
+  "afroz":{phone: "0092-3002238369", email:"szaighamhb@hotmail.com"},
+  "arshia":{phone: "03353550848", email:"szehra.3012@gmail.com"},
+  "naqi-haider":{phone: "'03353550848", email:"syednaqqia@gmail.com"},
+  "salman":{phone: "+971502480978", email:"salmanhasan61@hotmail.com"},
+  "taqi":{phone: "+971503266729", email:"taqihasan@gmail.com"},
+  "azhar":{phone: "+92-345-8685299", email:"azhar.mazharhussain@gmail.com"},
 
 
 
