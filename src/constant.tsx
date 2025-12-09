@@ -2158,13 +2158,13 @@ export const SAMPLE_FAMILY: FamilyTree =
    gender: "F",
    lifeStatus: "alive",
    parentIds: ["mazahir-hussain","kishwar-sultana"],
-   spouseIds: ["qalb-e-abid"],
+   spouseIds: ["kalb-e-abid"],
     address: "Karachi, Pakistan",
    orderId: 8
  },
- "qalb-e-abid":{
-   id: "qalb-e-abid",
-   displayName: "Qalb-e-Abid",
+ "kalb-e-abid":{
+   id: "kalb-e-abid",
+   displayName: "Kalbe Abid Jafri",
    gender: "M",
    
    lifeStatus: "deceased",
@@ -2180,7 +2180,7 @@ export const SAMPLE_FAMILY: FamilyTree =
    displayName: "Raza Abid",
    gender: "M",
    lifeStatus: "alive",
-   parentIds: ["Zahra(Munni)","qalb-e-abid"],
+   parentIds: ["Zahra(Munni)","kalb-e-abid"],
     spouseIds: ["sadaf-raza"]
     ,orderId: 1,
     address: "Germany"
