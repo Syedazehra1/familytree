@@ -2166,7 +2166,12 @@ export const SAMPLE_FAMILY: FamilyTree =
    id: "qalb-e-abid",
    displayName: "Qalb-e-Abid",
    gender: "M",
-   lifeStatus: "alive",
+   
+   lifeStatus: "deceased",
+    grave: { 
+      city: "Karachi Pakistan",
+      cemetery: "Wadi-e-Hussain"
+     },
    spouseIds: ["Zahra(Munni)"],
    address: "Karachi, Pakistan"
  },
