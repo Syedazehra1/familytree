@@ -41,7 +41,7 @@ export const SAMPLE_FAMILY: FamilyTree =
       id: "ghulam-hussain",
       displayName: "Ghulam Hussain ibn.e.Adam غلام حسین",
       gender: "M",
-      lifeStatus: "unknown",
+      lifeStatus: "deceased",
     },
 
     // Head
